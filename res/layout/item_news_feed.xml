@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:layout_marginBottom="5dp"
+	    >
+	    <com.mikhaellopez.circularimageview.CircularImageView
+	        android:id="@+id/inf_pic"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/ic_launcher"
+	        />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_marginLeft="5dp"
+	        >
+	        	<LinearLayout
+	        	    android:layout_width="match_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:orientation="horizontal">
+	        	    
+	        	    <com.tiki.gymnet.customviews.CustomTextView 
+				        android:id="@+id/inf_username"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="John"
+				        android:textColor="@android:color/black"
+				        android:textSize="16sp"
+				        />
+	        	    <com.tiki.gymnet.customviews.CustomTextView 
+				        android:id="@+id/inf_time"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:text="2m"
+				        android:textColor="@color/grey"
+				        android:textSize="14sp"
+				        android:gravity="right"
+				        />
+	        	</LinearLayout>
+		        
+		    	<com.tiki.gymnet.customviews.CustomTextView 
+		        android:id="@+id/inf_location"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Celebrity Fitness Subang Parade"
+		        android:textColor="@android:color/black"
+		        android:textSize="14sp"
+		        android:textStyle="italic"
+		        />
+	    </LinearLayout>
+	</LinearLayout>
+	
+	<com.tiki.gymnet.customviews.CustomTextView 
+	        android:id="@+id/inf_message"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Heavy lifting, bicycling exercise"
+	        android:textColor="@android:color/black"
+	        android:textSize="14sp"
+	        android:textStyle="bold"
+	        android:paddingBottom="5dp"
+		    />
+	
+	<com.tiki.gymnet.customviews.CustomTextView 
+	        android:id="@+id/inf_otw"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="On the way!"
+	        android:textColor="@android:color/black"
+	        android:textSize="14sp"
+	        android:textStyle="italic"
+	        android:drawableLeft="@drawable/tick"
+	        android:drawablePadding="5dp"
+	        android:visibility="gone"
+		    />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+	    >
+	    <com.tiki.gymnet.customviews.CustomTextView 
+	        android:id="@+id/inf_likes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="1"
+	        android:textColor="@android:color/black"
+	        android:textSize="12sp"
+	        android:drawableLeft="@drawable/heart"
+	        android:layout_marginRight="20dp"
+	        android:drawablePadding="5dp"
+		    />
+	    
+	    <com.tiki.gymnet.customviews.CustomTextView 
+	        android:id="@+id/inf_comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="2"
+	        android:textColor="@android:color/black"
+	        android:textSize="12sp"
+	        android:drawableLeft="@drawable/comment"
+	        android:drawablePadding="5dp"
+		    />
+	</LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkgrey"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

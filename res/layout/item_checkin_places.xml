@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:padding="10dp">
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle"
+            />
+        <com.tiki.gymnet.customviews.CustomTextView 
+            android:id="@+id/index"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="1"
+	        android:textAllCaps="true"
+	        android:layout_gravity="center"
+	        android:textColor="@android:color/white"
+	        android:textSize="16sp"
+	        />
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        >
+        <com.tiki.gymnet.customviews.CustomTextView 
+            android:id="@+id/placename"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Celebrity Fitness"
+	        android:textColor="@android:color/black"
+	        android:textSize="16sp"
+	        />
+        <com.tiki.gymnet.customviews.CustomTextView 
+            android:id="@+id/address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Setia Walk Mall"
+	        android:textColor="@android:color/black"
+	        android:textSize="14sp"
+	        />
+    </LinearLayout>
+    
+    <com.tiki.gymnet.customviews.CustomTextView 
+            android:id="@+id/ppl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="10"
+	        android:textColor="@color/darkgrey"
+	        android:textSize="14sp"
+	        android:layout_gravity="top|right"
+	        android:drawableLeft="@drawable/small_ppl"
+	        android:drawablePadding="2dp"
+	        />
+    
+
+</LinearLayout>

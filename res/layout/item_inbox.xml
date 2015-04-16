@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+		>
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/inf_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+          >
+	          <LinearLayout
+	              android:layout_width="match_parent"
+	              android:layout_height="wrap_content"
+	              android:orientation="horizontal">
+	              
+	              <com.tiki.gymnet.customviews.CustomTextView 
+	                  android:id="@+id/inf_username"
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:text="Wee"
+	                  android:textColor="@android:color/black"
+	                  android:textSize="16sp"
+	                  />
+	              <com.tiki.gymnet.customviews.CustomTextView 
+	                  android:id="@+id/inf_time"
+	                  android:layout_width="match_parent"
+	                  android:layout_height="wrap_content"
+	                  android:text="6s"
+	                  android:textColor="@android:color/black"
+	                  android:textSize="14sp"
+	                  android:gravity="right"
+	              	  android:layout_marginRight="5dp" />
+	          </LinearLayout>
+	          
+	          <com.tiki.gymnet.customviews.CustomTextView 
+	              android:id="@+id/inf_message"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_marginTop="7dp"
+	              android:text="When are you coming to Malaysia ?"
+	              android:textColor="@android:color/black"
+	       		  android:textSize="14sp"
+	       		  android:textStyle="italic"
+	              />
+          
+         
+     </LinearLayout>
+            
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkgrey"
+        android:layout_marginTop="7dp"
+        />
+</LinearLayout>

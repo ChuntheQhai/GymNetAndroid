@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  
+	
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="top" >
+
+            </ListView>
+            
+            <EditText
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:height="50dp"
+                android:hint="Enter a message"
+                android:padding="10dp"
+                android:textColorLink="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" >
+
+        		<requestFocus />
+    		</EditText>
+
+              <ImageView
+                  android:id="@+id/sendMessage"
+                  android:layout_width="35dp"
+                  android:layout_height="35dp"
+                  android:layout_marginBottom="6dp"
+                  android:layout_marginRight="5dp"
+                  android:src="@drawable/message"
+                  android:layout_gravity="right|bottom" />
+        
+    </FrameLayout>
+
+  
+    
+        
+ 
+</LinearLayout>

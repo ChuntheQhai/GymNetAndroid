@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/yellow">
+
+    <com.tiki.gymnet.customviews.CustomTextView 
+        android:id="@+id/cab_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:text="News feed"
+	        android:gravity="center_vertical|left"
+	        android:textColor="@android:color/white"
+			android:textSize="16sp"
+			android:drawableRight="@drawable/triangle"
+			android:drawablePadding="15dp"
+			android:paddingLeft="40dp"
+			android:background="@drawable/selector_yellow"
+			android:paddingRight="5dp"
+	        />
+    
+    <com.tiki.gymnet.customviews.CustomTextView 
+        android:id="@+id/cab_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="Check-in"
+	        android:gravity="center"
+	        android:textColor="@android:color/white"
+			android:textSize="16sp"
+			android:visibility="gone"
+	        />
+
+</LinearLayout>

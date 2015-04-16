@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/workout2"
+        android:scaleType="fitCenter"
+        />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_overlay"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        >
+	    <com.tiki.gymnet.customviews.CustomTextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Please login with your email and password:"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="@android:color/white"
+	        android:gravity="center"
+	        android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:textSize="16sp"
+			android:layout_marginBottom="100dp"
+			android:layout_marginTop="15dp"
+	        />
+	    
+	    <EditText
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="E-mail"
+	        android:id="@+id/email_et"
+	        android:background="@android:color/white"
+	        android:paddingTop="12dp"
+	        android:paddingBottom="12dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_marginBottom="15dp"
+	        />
+	    
+	    <EditText
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Password"
+	        android:id="@+id/password_et"
+	        android:background="@android:color/white"
+	        android:paddingTop="12dp"
+	        android:paddingBottom="12dp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:layout_marginBottom="15dp"
+	        android:inputType="textPassword"
+	        />
+	    
+	    
+	        <com.tiki.gymnet.customviews.CustomTextView 
+	            android:id="@+id/log_in"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Login"
+		        android:layout_gravity="center_horizontal"
+		        style="@style/Yellow_Button_Style"
+		        android:gravity="center"
+		        android:layout_marginBottom="15dp"
+		        android:paddingTop="12dp"
+		        android:paddingBottom="12dp"
+		        />
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:gravity="center"
+	            android:id="@+id/progress"
+	            android:visibility="invisible"
+	            >
+	            <ProgressBar 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                style="?android:attr/android:progressBarStyleSmall" />
+	                />
+	            <com.tiki.gymnet.customviews.CustomTextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Authenticating..."
+			        android:textColor="@android:color/white"
+			        android:gravity="center"
+			        android:layout_marginLeft="15dp"
+					android:layout_marginRight="20dp"
+					android:textSize="16sp"
+			        />
+	        </LinearLayout>
+	        
+	        <View
+	            android:layout_width="1dp"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            />
+	        
+	        <com.tiki.gymnet.customviews.CustomTextView 
+	            android:id="@+id/sign_up"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="Forget password?"
+		        android:layout_gravity="center_horizontal"
+		        style="@style/Yellow_Button_Style"
+		        android:gravity="center"
+		        android:paddingTop="12dp"
+		        android:paddingBottom="12dp"
+		        android:layout_marginBottom="30dp"
+		        android:visibility="gone"
+		        />
+	    
+	    
+	</LinearLayout>
+</FrameLayout>
